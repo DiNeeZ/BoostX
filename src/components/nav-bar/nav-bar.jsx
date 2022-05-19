@@ -1,9 +1,18 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Button from '../button/button'
 import './nav-bar.scss'
 
 const Navbar = () => {
-  const [ isOpen, setIsOpen ] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+  }, [isOpen])
+
 
   return (
     <>
