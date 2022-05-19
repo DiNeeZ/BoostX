@@ -16,6 +16,7 @@
     height: 0;
     border-left: 304px solid transparent;
     border-bottom: 214px solid $light-color;
+    pointer-events: none;
   }
 
   &__container {

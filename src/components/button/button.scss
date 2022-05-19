@@ -11,7 +11,6 @@
   border-radius: 6px;
   width: 137px;
   transition: background-color .15s ease-in-out;
-  z-index: 10;
 
   &:hover {
     background-color: lighten($accent-color, 5%)
