@@ -17,9 +17,9 @@ const Goals = () => {
             boostx successfully facillitates the launches of multiple high quality blockchain projects.
           </p>
         </div>
-        <div className='goals__img'>
-          <img src={goalsImage} alt='decoration'/>
-        </div>
+      </div>
+      <div className='goals__img'>
+        <img src={goalsImage} alt='decoration' />
       </div>
     </section>
   )
