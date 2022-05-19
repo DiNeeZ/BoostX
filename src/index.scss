@@ -1,0 +1,17 @@
+@import "./scss/normalize";
+@import "./scss/fonts";
+@import "./scss/vars";
+@import "./scss/settings";
+
+body {
+  margin: 0;
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  background-color: $light-color;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}

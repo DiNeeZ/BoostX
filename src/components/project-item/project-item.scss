@@ -1,0 +1,238 @@
+@import "../../scss/vars.scss";
+
+.project-item {
+  position: relative;
+  padding: 50px 30px 50px 50px;
+  font-size: 24px;
+  background-color: $white-color;
+  border-radius: 20px;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 44px;
+  }
+
+  &__logo {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 30px;
+    background-color: #e6f5f8;
+  }
+
+  &__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__sale-ended {
+    margin: 0;
+    margin-bottom: 4px;
+    font-family: "Gilroy";
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: #01a6db;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 7px;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -0.03em;
+    color: $black-color;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.03em;
+    color: rgba($black-color, 0.7);
+  }
+
+  &__descr {
+    margin: 0 0 30px 6px;
+    font-family: "Gilroy";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: #64607d;
+  }
+
+  &__links {
+    margin: 0 0 41px 6px;
+    font-family: "Gilroy";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: #64607d;
+  }
+
+  &__link {
+    &:first-child {
+      margin-bottom: 18px;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__change {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__change-title {
+    font-family: "Gilroy";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: #64607d;
+  }
+
+  &__change-nums {
+    font-family: "Gilroy";
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    color: #00aea5;
+  }
+
+  &__hints {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+
+  &__hint {
+    display: inline-flex;
+    width: 39px;
+    height: 39px;
+    padding: 7px;
+    border: 1px solid rgba($black-color, 0.15);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.15s ease-in-out;
+
+    &:hover {
+      border-color: rgba($black-color, 0.3);
+    }
+
+    &--location {
+      margin-right: 15px;
+    }
+  }
+}
+
+@media (max-width: ($bp-mobile)) {
+  .project-item {
+    padding: 32px 19px 32px 35px;
+
+    &__top {
+      margin-bottom: 28px;
+    }
+
+    &__logo {
+      width: 75px;
+      height: 75px;
+      margin-right: 19px;
+    }
+
+    &__image {
+      width: 50%;
+    }
+
+    &__sale-ended {
+      font-size: 8px;
+      line-height: 10px;
+    }
+
+    &__title {
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    &__subtitle {
+      font-size: 11px;
+      line-height: 16px;
+    }
+
+    &__descr {
+      margin-bottom: 19px;
+      font-size: 11px;
+      line-height: 19px;
+    }
+
+    &__links {
+      margin-bottom: 25px;
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    &__link {
+      &:first-child {
+        margin-bottom: 12px;
+      }
+    }
+
+    &__btn {
+      width: 143px;
+      padding: 10px 0;
+      font-size: 9px;
+      line-height: 19px;
+    }
+
+    &__change-title {
+      margin-bottom: 3px;
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    &__change-nums {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &__hints {
+      top: 18px;
+      right: 18px;
+    }
+
+    &__hint {
+      width: 25px;
+      height: 25px;
+      padding: 5px;
+
+      &--location {
+        margin-right: 9px;
+      }
+    }
+  }
+}
